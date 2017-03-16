@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<h1>Download Result</h1>
+
+<div th:if="${message}">
+    <table>
+    <tr th:each="msg : ${message}">
+        <td th:text="${msg}">Onions</td>
+    </tr>
+    </table>
+</div>
+
+</body>
+</html>
