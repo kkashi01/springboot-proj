@@ -2,28 +2,22 @@ package com.example.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-
-import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.nio.file.attribute.BasicFileAttributes;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
-// http://www.mkyong.com/spring-boot/spring-boot-file-upload-example/
 
 @Controller
 public class DownloadController {
 
     //Save the uploaded file to this folder
-    private static String UPLOADED_FOLDER = "c://tmp//uploadFolder//";
+    private static String UPLOADED_FOLDER = "/tmp/uploadFolder/";
 
     // Meta data file will have a suffix like below
     private static String META_DATA_SUFFIX = "_META.txt";
@@ -39,7 +33,7 @@ public class DownloadController {
 
         List<String> result = new ArrayList<>();
 
-        // =============== if user didna't specify an input filename,
+        // =============== if user didn't specify an input filename,
         // then print listing of all files, filtered by META_DATA_SUFFIX
         if (fileName.isEmpty()) {
             Path downloadPath = Paths.get(UPLOADED_FOLDER);

@@ -16,7 +16,7 @@ import java.nio.file.attribute.BasicFileAttributes;
 public class UploadController {
 
     //Save the uploaded file to this folder
-    private static String UPLOADED_FOLDER = "c://tmp//uploadFolder//";
+    private static String UPLOADED_FOLDER = "/tmp/uploadFolder/";
 
     // Meta data file will have a suffix like below
     private static String META_DATA_SUFFIX = "_META.txt";
