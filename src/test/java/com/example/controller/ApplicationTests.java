@@ -10,6 +10,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 import static org.junit.Assert.assertThat;
 import static org.junit.matchers.JUnitMatchers.*;
 
+// great read: http://zoltanaltfatter.com/2016/04/16/trying-out-spring-boot-1.4.0-new-features-and-enhancements/
+
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class ApplicationTests {

@@ -22,6 +22,12 @@ import org.slf4j.LoggerFactory;
 // tools\curl.exe "http://localhost:8080/download[?fileName=pom.xml_META.txt][&download=true|false]"
 // "C:\Program Files (x86)\GnuWin32\bin\wget.exe" -O foo.txt "http://localhost:8080/download?fileName=pom.xml_META.txt&download=true"
 
+/**
+ * Rest service to upload files onto server. For each upload, it will also create
+ * a matching file that ends with _META.txt. This text file will contain some
+ * basic meta data information
+ *
+ */
 @RestController
 public class UploadControllerRest {
 

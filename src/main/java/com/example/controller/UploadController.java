@@ -12,6 +12,12 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.attribute.BasicFileAttributes;
 
+/**
+ * Rest service to upload files onto server. For each upload, it will also create
+ * a matching file that ends with _META.txt. This text file will contain some
+ * basic meta data information
+ *
+ */
 @Controller
 public class UploadController {
 

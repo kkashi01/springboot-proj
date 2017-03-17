@@ -13,6 +13,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Class to allow for downloading files from.
+ * Can also be used to get listing of available files
+ */
 @Controller
 public class DownloadController {
 
