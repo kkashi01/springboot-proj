@@ -12,7 +12,7 @@ Downloading file:
 
 
 *******
-******** Spring boot MVC services for file upload / download
+******* Spring boot MVC services for file upload / download
 *******
 The file can be selected from local storage and will then be stored into persistence store; file system.
 The uploaded file will be stored into /tmp/uploadFolder.
@@ -27,4 +27,9 @@ http://localhost:8080/download
    If non-existent file is entered, produces error message
    If valid meta data file is requested, it will pull the information and display result
 
+
+******
+****** Scheduler
+******
+For demo purpose, scheduler enabled to run using fixed interval of 5 sec, comment to disable in SpringBootWebApplication
 
